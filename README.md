@@ -185,6 +185,7 @@ git push -u origin master
   - [The Lorem Ipsum for photos.](https://picsum.photos/images)
 - [What is GitHub Pages?](https://pages.github.com/)
   - [gh-pages](https://www.npmjs.com/package/gh-pages)
+  - [React Deployment for Github](https://create-react-app.dev/docs/deployment#github-pages-https-pagesgithubcom)
 
 ## Basic Router Setup
 
