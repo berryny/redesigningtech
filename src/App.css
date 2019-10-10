@@ -1,22 +1,227 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+/* Color Theme Swatches in Hex */
+.rtc-color-1-hex { color: #FFFFFF; } /* white */
+.rtc-color-2-hex { color: #000000; } /* black */
+.rtc-color-3-hex { color: #FF7100; } /* orange */
+.rtc-color-4-hex { color: #FFE000; } /* yellow */
+.rtc-color-5-hex { color: #42BC10; } /* green */
+
+/* Color Theme Swatches in RGBA */
+.rtc-color-1-rgba { color: rgba(255, 255, 255, 1); }
+.rtc-color-2-rgba { color: rgba(0, 0, 0, 1); }
+.rtc-color-3-rgba { color: rgba(255, 112, 0, 1); }
+.rtc-color-4-rgba { color: rgba(255, 223, 0, 1); }
+.rtc-color-5-rgba { color: rgba(66, 188, 15, 1); }
+
+/* Color Theme Swatches in HSLA */
+.rtc-color-1-hsla { color: hsla(0, 0, 100, 1); }
+.rtc-color-2-hsla { color: hsla(0, 0, 0, 1); }
+.rtc-color-3-hsla { color: hsla(26, 100, 50, 1); }
+.rtc-color-4-hsla { color: hsla(52, 100, 50, 1); }
+.rtc-color-5-hsla { color: hsla(102, 84, 39, 1); }
+
+
+/*--------------------------------------------------------------
+	Default Styles
+--------------------------------------------------------------*/
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #444444;
+  line-height: 1.6;
+  font-family: 'Poppins', Helvetica, arial, sans-serif;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
 }
 
-.App-logo {
-  height: 40vmin;
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display:block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  font-family: "Poppins", Helvetica, arial, sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, blockquote, dl, table, pre {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ul, ol { margin: 0px; padding: 0px; } */
+
+body a { color: #444444; text-decoration: none; font-weight: 400; }
+body a:hover { color: #2a2a2a; text-decoration: none; }
+body a:focus, body a:visited, body a:active { outline: 0; text-decoration: none; }
+
+p {
+  font-weight: 300;
+  color: #777;
+}
+
+/*--------------------------------------------------------------
+#	Text color Selection
+--------------------------------------------------------------*/
+::selection {
+  background-color: rgba(255, 112, 0, 0.68);
+  color: #fff;
+  text-shadow: none;
+}
+body .bg-light {
+  background-color: rgb(245, 245, 245) !important;
+}
+body .bg-dark {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+
+/*--------------------------------------------------------------
+#	Styles Selection: jumbotron
+--------------------------------------------------------------*/
+body .jumbotron {
+  border-radius: 0;
+  position: relative;
+}
+.jumbotron.about-jumbotron,
+.jumbotron.home-jumbotron {
+  height: 50vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron.home-jumbotron {
+  background-image: url('./assets/jd-helpinghands-1.jpg');
+}
+.jumbotron .cover-jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: rgba(196, 45, 50, 0.50); */
+  background-color: rgba(0, 0, 100, 0.25);
+}
+.jumbotron h1 {
+  font-weight: 700;
+  color: #FFE000;
+  /* text-shadow: 0px 5px 10px #af2424; */
+  text-shadow: 0px 5px 5px #FF7100;
+  text-transform: uppercase;
+}
+.jumbotron .lead {
+  color: #fff;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #09d3ac;
+.jumbotron.about-jumbotron {
+  background-image: url('./assets/jd-coder.jpg');
+}
+
+/*--------------------------------------------------------------
+#	Styles Selection: home
+--------------------------------------------------------------*/
+.container h2,
+.section_content h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section_content .service_wrap {
+  background-color: #ffffff;
+  border-radius: 	3px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 4px rgba(107, 69, 69, 0.050);
+}
+
+.service_icon {
+  display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 45px;
+	margin-bottom: 15px;
+	background-color: #eeeeee;
+	color: #777777;
+	text-align: center;
+}
+.service_icon i {font-size: 1.4em;}
+
+.section_content .service_wrap:hover {
+  cursor: pointer;
+}
+.section_content .service_wrap:hover span {
+  background-color: #42BC10;
+  color: #fff;
+}
+.section_content .service_wrap:hover h4,
+.section_content .service_wrap:hover h5 {
+  color: #42BC10;
+}
+.section_content .service_wrap h4,
+.section_content .service_wrap h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.social-media a,
+.social-media a:link,
+.social-media a:hover,
+.social-media a:visited,
+.social-media a:active {
+  color: #FFE000;
+  font-size: 1.45rem;
+}
+.social-media a:hover {
+  color: #3B3B3B;
+}
+
+/*--------------------------------------------------------------
+#	Styles Selection: portfolio
+--------------------------------------------------------------*/
+
+.profile_title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio_item {
+  background-color: #ffffff;
+}
+
+.portfolio_info { position: relative; }
+.viewproject {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFE000;
+  border-radius: 100%;
+  margin: auto;
+  position: absolute;
+  top: -1.75em;
+  left: 0;
+  right: 0;
+}
+.viewproject:hover,
+.viewproject:focus,
+.viewproject:active {
+  color: #fff;
+  background-color: #FF7100;
+}
+/*--------------------------------------------------------------
+#	Styles Selection: footer
+--------------------------------------------------------------*/
+
+.footer {
+  background-color: #FFE000;
+}
+.footer * {
+  color: #3B3B3B;
+}
+
+@media (max-width:768px) {
+  nav.fixed-top {
+    position: relative;
+  }
 }

@@ -1,4 +1,297 @@
+# React Project for Portfolio Site
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Be sure to install or update
+- [node.js](https://nodejs.org/en/download/current/)
+- [git](https://git-scm.com/downloads)
+
+### Using Terminal on Mac
+- Open your **Applications** folder
+- Open **Utilities**
+- Double-click on **Terminal**
+  - A small window with a white background open on your desktop
+
+## React Installation for Mac
+
+An error occurred when using `npm install -g react-devtools` the work around trick is:
+```
+cd /usr/local/lib/
+sudo chmod 777 node_modules
+npm install -g react-devtools
+```
+
+First, install React App using the command:
+```
+sudo npm install -g create-react-app
+create-react-app redesigningtech
+cd redesigningtech
+```
+
+Second, install React Router DOM using the command:
+```
+sudo npm install react-router-dom
+npm install
+```
+
+It is suggested to begin the server by typing:
+```
+yarn start
+```
+
+## Project Setup
+
+Include React Bootstrap in your project using `npm`
+
+```
+sudo npm install jquery --save
+sudo npm install react-bootstrap bootstrap --save
+```
+
+Alternatively you may use yarn:
+
+```
+yarn add bootstrap
+```
+
+Import Bootstrap CSS and optionally Bootstrap theme CSS in the beginning of your **src/index.js** file:
+
+```
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'react-bootstrap/dist/react-bootstrap.min.js';
+```
+
+Include Font Awesome in your project using `npm`
+```
+  sudo npm i --save @fortawesome/react-fontawesome
+  sudo npm i --save @fortawesome/fontawesome
+  sudo npm i --save @fortawesome/free-solid-svg-icons
+  sudo npm i --save @fortawesome/fontawesome-svg-core
+  sudo npm i --save @fortawesome/free-brands-svg-icons
+```
+
+```
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+function Home() {
+  return (
+    <div>
+    <h1>Hello World!</h1>
+    <p>
+      <a rel="noopener noreferrer" href="mailto:info@redesigningtech.com" target="_blank">
+        <FontAwesomeIcon icon={faEnvelope} />
+      </a>
+    </p>
+    </div>
+  )
+}
+console.log('loaded home page');
+
+export default Home;
+
+```
+
+## React Bootstrap - Carousel
+```
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+
+function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(null);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+    setDirection(e.direction);
+  };
+
+  return (
+    <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://picsum.photos/800"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://picsum.photos/800"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="https://picsum.photos/800"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+console.log("Controlled Carousel");
+
+export default ControlledCarousel;
+
+```
+
+## Resources
+
+- [Learn about React Router](https://reacttraining.com/react-router/)
+- Install Atom text editor [React Snippets](http://orktes.github.io/atom-react/#snippets)
+- [React Router Core](https://reacttraining.com/react-router/core/guides/quick-start)
+- [React Router Web](https://reacttraining.com/react-router/web/guides/quick-start)
+- [React Router Native](https://reacttraining.com/react-router/native/guides/quick-start)
+- [React FontAwesomeIcon](https://github.com/FortAwesome/react-fontawesome#installation)
+- [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
+  - [The Lorem Ipsum for photos.](https://picsum.photos/images)
+
+## Basic Router Setup
+
+Add React and Router import in the **src/App.js** file
+```
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+```
+
+- Create a **src/components** folder
+- Add filenames
+  - home.js <- Contains the landing page
+  - nav.js <- Contains the navigation section
+  - about.js <- Contains the about page
+  - footer.js <- Contains the footer section
+
+Add to import in the components files in **src/App.js**
+```
+  import NavBar from './components/nav';
+  import Home from './components/home';
+  import About from './components/about';
+  import Footer from './components/footer';
+  function App() {
+    return (
+      <Router>
+        <header className="header">
+          <NavBar />
+        </header>
+        <main role="main" className="main">
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+
+            <Route exact path="/about">
+              <About />
+            </Route>
+
+          </Switch>
+        </main>
+        <footer className="footer">
+          <Footer />
+        </footer>
+    </Router>
+    );
+  }
+
+  export default App;
+```
+
+Simple code for **src/components/home.js**
+```
+import React from 'react';
+
+function Home() {
+  return (
+    <div><h1>Welcome to Home page.</h1></div>
+  )
+}
+console.log('loaded home page');
+
+export default Home;
+```
+
+Simple code for **src/components/nav.js**
+```
+import React from 'react';
+import { Link } from "react-router-dom";
+
+function NavBar() {
+  return (
+    <nav>
+      <ul>
+        <li><Link className="home-link" to="/">Home</Link></li>
+        <li><Link className="about-link" to="/about">About</Link></li>
+      </ul>
+    </nav>
+  )
+}
+export default NavBar;
+```
+
+If you are using React Router, use this:
+```
+  <Link to="/files/myfile.pdf" target="_blank" download>Download</Link>
+```
+
+Where **/files/myresume.pdf** is inside your public folder.
+
+Simple code for **src/components/about.js**
+```
+import React from 'react';
+
+function About() {
+  return (
+    <div>
+      <h1>Welcome to About page.</h1>
+      <Link to="/files/myresume.pdf" target="_blank" download>Download Resume</Link>
+    </div>
+  )
+}
+console.log('loaded about page');
+
+export default About;
+```
+
+Simple code for **src/components/footer.js**
+```
+import React from 'react';
+
+function Footer() {
+  return (
+    <div><p>&copy; React Project</p></div>
+  )
+}
+
+export default Footer;
+```
+
+### How to create a README file for github
+[Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#lists)
+
+# React Generated README.md content
 
 ## Available Scripts
 

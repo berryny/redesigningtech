@@ -1,0 +1,117 @@
+{
+ "name": "Hire me!",
+ "lead": "If you are a recruiter or direct hire, please click the below links to learn more about and if the job description matches the position requirements. Thank you!",
+ "download_link": "../assets/Judith_Desire_Resume.pdf",
+ "resume": {
+  	"section": "Resume",
+  	"leadership_experience": {
+      "id": "leadership_experience",
+      "section": "Leadership Experience",
+      "jobroles": [
+    		{
+    			"title":"Front End Web Developer",
+    			"company": "Redesigning Technology Corp.",
+    			"location": "New York, NY",
+    			"date": "Present",
+    			"description":[
+            "Providing Front-End/Web Development for desktop browsers and mobile/tablet (portable) devices.", "Establish and direct long term strategic goals, policies, and procedures for SEO content and web marketing techniques.","Take PSD or XD mockup and create pixel perfect fully compliant hand-code HTML Markup.", "Determine systems needs with software and hardware to meet client’s business objectives.","Develop consistent, compliant, cross-browser code websites utilizing best practices for UX and GUI capability",
+            "Work in fast-paced small - or large environments","Assist clients with site tracking and analysis."
+          ]
+    		},
+        {
+    			"title":"Director of Community Outreach / Event Management",
+    			"company": "Uptown & Boogie Bicycle Advocacy",
+    			"location": "New York, NY",
+    			"date": "Present",
+    			"description":["Providing Front-End/Web Development for desktop browsers and mobile/tablet (portable) devices","Establish and direct long term strategic goals, policies, and procedures for SEO content and web marketing techniques","Responsible for interaction, create, schedule, organize, and promote outreach activities within the community and promoting company services through marketing events, such as workshops and outdoor activities in the Manhattan and Bronx neighborhoods","Work with non-profit organization to provide cutting-edge marketing techniques to build loyalty and support within their service areas"]
+    		}
+    	 ]
+    },
+
+  	"work_experience": {
+      "id": "work_experience",
+      "section": "Work Experience",
+      "jobroles": [
+        {
+    			"num": "2017-2019",
+    			"companies":[
+    				{
+    					"title": "Code Instructor",
+    					"company": "CUNY Kingsborough Community College / CityTech",
+    					"location": "Brooklyn, NY",
+    					"projects": "6-week introduction course to Front End Development for UX Designers",
+    					"jobdescription": "Providing new User Experience designers who want a greater understanding of the iteration portion of the UX spectrum and real world development best practices. Students gaining insight to the process of prototyping and wireframing using HTML, CSS, Javascript, Adobe XD, and their frameworks."
+    				},
+            {
+    					"title": "Code Instructor",
+    					"company": "Silicon Harlem",
+    					"location": "Manhattan, NY",
+    					"projects": "6-week course curriculum which teaches youth the skills towards the development of building a community-oriented website",
+    					"jobdescription": "Providing non-technical youth between 16-24 with the skills on how to build prototypes using Adobe XD, fully functional website from end-to-end using HTML/CSS/Wordpress and speaking the lingo."
+    				},
+            {
+    					"title": "Code Instructor",
+    					"company": "Silicon Harlem",
+    					"location": "Manhattan, NY",
+    					"projects": "9-week course curriculum and mentor students during their career growth to help begin their coding careers",
+    					"jobdescription": "Providing non-technical professionals who want to learn how to build a fully functional website from end-to-end using HTML/CSS/Javascript and speaking the lingo."
+    				},
+            {
+    					"title": "Web Developer, Community Outreach and Social Media Coordinater",
+    					"company": "Boogie on the Boulevard",
+    					"location": "Bronx, NY",
+    					"projects": "#BOOGIEBLVD - boogieontheboulevard.org",
+    					"jobdescription": "Responsible for developing native mobile, tablet and desktop web design with responsiveness, fluid layout and fixed layouts landing page using Wordpress, HTML/HTML5, CSS2/CSS3, JavaScript, jQuery and Bootstrap."
+    				}
+    			]
+    		},
+    		{
+    			"num": "2016",
+    			"companies":[
+    				{
+    					"title": "Remote Front End Developer",
+    					"company": "Ruder Finn Inc.",
+    					"location": "New York, NY",
+    					"projects": "Nokia Technology, E-mail templates",
+    					"jobdescription": "Utilize hand-coding skills in HTML, JavaScript, jQuery, CSS/Sass, Bootstrap, and Photoshop to produce template webpages. Coding email newsletter templates for Apple Mail and MailChimp."
+    				}
+    			]
+    		},
+    		{
+    			"num": "2015",
+    			"companies":[
+    				{
+    					"title":"Front End Developer",
+    					"company": "Tommy Hilfiger",
+    					"location": "New York, NY",
+    					"projects": "Tommy Blog",
+    					"jobdescription": "Responsible for updating and maintaining blog template development on native mobile, tablet and desktop web pages using HTML and CSS."
+    				},
+    				{
+    					"title":"Interactive Developer",
+    					"company": "Droga5",
+    					"location": "New York, NY",
+    					"projects": "No Ceilings",
+    					"jobdescription": "Responsible for developing native mobile, tablet and desktop web design with responsiveness, fluid layout and fixed layouts landing page using HTML/HTML5, CSS2/CSS3, JS/jQuery and Bootstrap 3."
+    				}
+    			]
+    		}
+  	  ]
+    },
+
+  	"technology": {
+      "id": "technology_profile",
+  		"section": "Technology Profile",
+	  	"skills": "HTML/HTML5, XML/JSON CSS/CSS3/LESS/SASS, JavaScript, jQuery, React, Angular, JSON, AJAX, SQL, MYSQL, Bootstrap, Foundation, Git/Github, Tumblr, Wordpress, SurveyMonkey, Mailchimp, Slack, Hootsuite, Freedcamp, ATOM Editor, Sublime Editor, Safari, Chrome, Internet Explorer, Firefox Developer, Adobe Photoshop, Adobe Lightroom, Adobe XD, Microsoft Office Suite, Google Suite (Gmail, Docs, Sheets, Drive, Calendar, Meet), macOS, Microsoft Windows"
+  	},
+
+  	"education": {
+      "id": "education",
+  		"section": "Education",
+      "degree": "Bachelor of Science in Computer Science & Business Management",
+      "school": "New York Institute of Technology",
+      "location": "New York, NY"
+  	}
+
+  }
+}
