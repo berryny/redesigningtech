@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Sites
+- [redesigningtech.com](https://redesigningtech.com)
+- [berryny.github.io/redesigningtech/](https://berryny.github.io/redesigningtech/)
+
 ### Be sure to install or update
 - [node.js](https://nodejs.org/en/download/current/)
 - [git](https://git-scm.com/downloads)
