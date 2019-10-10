@@ -159,12 +159,12 @@ export default ControlledCarousel;
 
 ## Commit to Github
 ```
-git remote add origin <url/project-name.git>
-
+git remote add origin https://username.github.io/project-name.git
+git push -u origin master
 ```
 
 ## Deploying React to Github Pages
-- `sudo npm install gh-pages` or `yarn add gh-pages`
+- `npm install gh-pages --save-dev` or `yarn add gh-pages`
 - Open `package.json` add the line `"homepage": "link-to-your-repository",` after `"private": true,`
 - In `package.json` add `"deploy": "gh-pages -d build",` in `scripts {...}`
 - In the terminal, run this command `npm run deploy` OR `yarn run deploy`
@@ -179,6 +179,8 @@ git remote add origin <url/project-name.git>
 - [React FontAwesomeIcon](https://github.com/FortAwesome/react-fontawesome#installation)
 - [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction/)
   - [The Lorem Ipsum for photos.](https://picsum.photos/images)
+- [What is GitHub Pages?](https://pages.github.com/)
+  - [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## Basic Router Setup
 
