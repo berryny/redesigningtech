@@ -157,6 +157,18 @@ export default ControlledCarousel;
 
 ```
 
+## Commit to Github
+```
+git remote add origin <url/project-name.git>
+
+```
+
+## Deploying React to Github Pages
+- `sudo npm install gh-pages` or `yarn add gh-pages`
+- Open `package.json` add the line `"homepage": "link-to-your-repository",` after `"private": true,`
+- In `package.json` add `"deploy": "gh-pages -d build",` in `scripts {...}`
+- In the terminal, run this command `npm run deploy` OR `yarn run deploy`
+
 ## Resources
 
 - [Learn about React Router](https://reacttraining.com/react-router/)
