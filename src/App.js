@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Switch, Route } from "react-router-dom";
 
 import './App.css';
 
@@ -15,6 +15,7 @@ import Project from './components/project';
 
 function App() {
   return (
+    // <HashRouter basename="/">
     <Router>
       <header className="">
         <NavBar />
@@ -24,6 +25,10 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/redesigningtech">
             <Home />
           </Route>
 
@@ -58,6 +63,7 @@ function App() {
         <Footer />
       </footer>
   </Router>
+  // </HashRouter>
   );
 }
 
