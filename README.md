@@ -50,6 +50,7 @@ Include React Bootstrap in your project using `npm`
 ```
 sudo npm install jquery --save
 sudo npm install react-bootstrap bootstrap --save
+sudo npm install react-datepicker --save
 ```
 
 Alternatively you may use yarn:
@@ -186,6 +187,10 @@ git push -u origin master
 - [What is GitHub Pages?](https://pages.github.com/)
   - [gh-pages](https://www.npmjs.com/package/gh-pages)
   - [React Deployment for Github](https://create-react-app.dev/docs/deployment#github-pages-https-pagesgithubcom)
+
+- [React Datepicker](https://reactdatepicker.com/)
+  - [React Date Picker](https://www.npmjs.com/package/react-datepicker)
+- [You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
 
 ## Basic Router Setup
 
