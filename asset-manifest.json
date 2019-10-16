@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/redesigningtech/static/css/main.59fb1a17.chunk.css",
+    "main.css": "/redesigningtech/static/css/main.73698c30.chunk.css",
     "main.js": "/redesigningtech/static/js/main.2e958989.chunk.js",
     "main.js.map": "/redesigningtech/static/js/main.2e958989.chunk.js.map",
     "runtime-main.js": "/redesigningtech/static/js/runtime-main.5daf6a28.js",
@@ -9,10 +9,10 @@
     "static/js/2.c73263ab.chunk.js": "/redesigningtech/static/js/2.c73263ab.chunk.js",
     "static/js/2.c73263ab.chunk.js.map": "/redesigningtech/static/js/2.c73263ab.chunk.js.map",
     "index.html": "/redesigningtech/index.html",
-    "precache-manifest.ba9d8f2ce4f73d8c806026d94160de6e.js": "/redesigningtech/precache-manifest.ba9d8f2ce4f73d8c806026d94160de6e.js",
+    "precache-manifest.bb8cc58903f51eedd5886d5b22b70cd8.js": "/redesigningtech/precache-manifest.bb8cc58903f51eedd5886d5b22b70cd8.js",
     "service-worker.js": "/redesigningtech/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/redesigningtech/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.59fb1a17.chunk.css.map": "/redesigningtech/static/css/main.59fb1a17.chunk.css.map",
+    "static/css/main.73698c30.chunk.css.map": "/redesigningtech/static/css/main.73698c30.chunk.css.map",
     "static/media/img-Judi.jpg": "/redesigningtech/static/media/img-Judi.df59ea78.jpg",
     "static/media/App.css": "/redesigningtech/static/media/jd-helpinghands-1.2bd179dd.jpg",
     "static/media/project-boogieblvd.jpg": "/redesigningtech/static/media/project-boogieblvd.982ec309.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.5daf6a28.js",
     "static/css/2.0624914a.chunk.css",
     "static/js/2.c73263ab.chunk.js",
-    "static/css/main.59fb1a17.chunk.css",
+    "static/css/main.73698c30.chunk.css",
     "static/js/main.2e958989.chunk.js"
   ]
 }
