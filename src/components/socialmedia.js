@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -6,7 +6,9 @@ import { faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 //free-solid-svg-icons', '@fortawesome/free-brands-svg-icons', '@fortawesome/fontawesome-svg-core', '@fortawesome/free-brands-svg-icons';
 
-function SocialMedia() {
+class SocialMedia extends Component {
+
+render() {
   return (
     <div id="social-links">
       <ul className="social-media list-inline">
@@ -25,6 +27,7 @@ function SocialMedia() {
       </ul>
     </div>
   );
+}
 }
 
 export default SocialMedia;

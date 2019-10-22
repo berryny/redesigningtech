@@ -45,6 +45,12 @@ yarn start
 
 ## Project Setup
 
+Include ESLint
+[Read more](https://eslint.org/docs/user-guide/getting-started)
+```
+sudo npm install eslint --save-dev
+```
+
 Include React Bootstrap in your project using `npm`
 
 ```
@@ -173,7 +179,7 @@ git push -u origin master
 - Open `package.json` add the line `"homepage": "link-to-your-repository",` after `"private": true,`
 - In `package.json` add `"deploy": "gh-pages -d build",` in `scripts {...}`
 - In the terminal, run this command `npm run deploy` OR `yarn run deploy`
-  - Error Message: `Failed to compile. EACCES: permission denied, rmdir`, add **sudo** command `sudo npm run deploy` OR `sudo yarn run deploy` 
+  - Error Message: `Failed to compile. EACCES: permission denied, rmdir`, add **sudo** command `sudo npm run deploy` OR `sudo yarn run deploy`
 
 ## Resources
 

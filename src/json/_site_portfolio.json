@@ -1,13 +1,13 @@
 {
   "name": "Portfolio",
-  "portfolio":[
-    {
+  "portfolio":[{
+    "boogieblvd":{
       "name":"Boogle on the Boulevard",
       "type": "Website / Branding",
       "roles":"Frontend Developer and Community Outreach",
       "thumbnail":{
         "alt":"Boogle on the Boulevard",
-        "img":"assets/project-boogieblvd.jpg"
+        "img":"../assets/project-boogieblvd.jpg"
       },
       "projectlink": "boogieblvd",
       "projectdescription":{
@@ -44,7 +44,7 @@
           }
       ]
     },
-    {
+    "stnicholashouses":{
       "name":"St Nicholas Houses",
       "type": "Website",
       "roles":"Code Insturctor",
@@ -87,5 +87,5 @@
           }
       ]
     }
-  ]
+  }]
 }

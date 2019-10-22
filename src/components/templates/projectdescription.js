@@ -1,11 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import fontawesome from '@fortawesome/fontawesome';
+import fontawesome from '@fortawesome/fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import {Carousel} from 'react-bootstrap/Carousel';
 
-import Data from '../json/site_portfolio.json';
-import ControlledCarousel from '../components/templates/controlledCarousel';
+import Data from '../../json/site_portfolio.json';
+import ControlledCarousel from './controlledCarousel';
 
 function projectMapping(data, c){
   return data.portfolio.map(function(details,index) {

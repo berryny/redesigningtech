@@ -11,7 +11,7 @@ import Resume from './components/resume';
 import Contact from './components/contact';
 import Footer from './components/footer';
 
-import Project from './components/project';
+import Project from './components/templates/projectdescription';
 
 function App() {
   return (
@@ -24,15 +24,15 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route exact path="/">
+          <Route exact={true} path="/">
             <Home />
           </Route>
 
-          <Route exact path="/redesigningtech">
+          <Route exact={true} path="/redesigningtech">
             <Home />
           </Route>
 
-          <Route exact path="/about">
+          <Route exact={true} path="/about">
             <About state="active"/>
           </Route>
 
@@ -40,7 +40,7 @@ function App() {
             <Portfolio />
           </Route>
 
-          <Route exact path="/resume">
+          <Route exact={true} path="/resume">
             <Resume />
           </Route>
 
