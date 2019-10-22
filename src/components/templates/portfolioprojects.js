@@ -13,14 +13,23 @@ class PortfolioProjects extends Component {
     }
     this.renderPortfolio = this.renderPortfolio.bind(this);
   }
+  // Import all images in image folder
+  //<img src={require('../../assets/project-boogieblvd.jpg')} className="img-fluid w-100" alt={"boogieblvd"} />
 
   renderPortfolio() {
     console.log('this.state.portfolio_projects',this.state.portfolio_projects);
+    console.log("process.env.",process.env);
     return this.state.portfolio_projects.map((pdata, i) => (
       <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4" key={i}>
         <div className="portfolio_item h-100">
-          <img src={pdata.thumbnail.img} className="img-fluid w-100" alt={pdata.thumbnail.alt} />
-          <p>hi there</p>
+          <img src={process.env.PUBLIC_URL + '../../'+pdata.thumbnail.img} className="img-fluid w-100" alt={pdata.thumbnail.alt} />
+          <div className="portfolio_info text-center p-2">
+            <Link className="viewproject" to={`/project/`+pdata.projectlink}>
+              <FontAwesomeIcon icon={faLink} />
+            </Link>
+            <h4>{pdata.name}</h4>
+            <p>{pdata.type}</p>
+          </div>
         </div>
       </div>
     ))
@@ -35,68 +44,6 @@ class PortfolioProjects extends Component {
               <h2>My Portfolio</h2>
               <div className="portfolio row justify-content-center">
                 {this.renderPortfolio()}
-{  /*
-                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <div className="portfolio_item h-100">
-                    <img src={require('../../assets/project-boogieblvd.jpg')} className="img-fluid w-100" alt={"boogieblvd"} />
-                      <div className="portfolio_info text-center p-2">
-                        <Link className="viewproject" to={`/project/boogieblvd`}>
-                          <FontAwesomeIcon icon={faLink} />
-                        </Link>
-                        <h4>Boogie on the Boulevard</h4>
-                        <p>Website / Branding</p>
-                      </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <div className="portfolio_item h-100">
-                    <img src={require('../../assets/project-stnicholashouses.jpg')} className="img-fluid w-100" alt={"stnicholashouses"} />
-                      <div className="portfolio_info text-center p-2">
-                        <Link className="viewproject" to={`/project/stnicholashouses`}>
-                          <FontAwesomeIcon icon={faLink} />
-                        </Link>
-                        <h4>St Nicholas Houses</h4>
-                        <p>Website</p>
-                      </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <div className="portfolio_item h-100">
-                    <img src={require('../../assets/project-ubbicycleadv.jpg')} className="img-fluid w-100" alt={"ubbicycleadv"} />
-                      <div className="portfolio_info text-center p-2">
-                        <Link className="viewproject" to={`/project/ubbicycleadv`}>
-                          <FontAwesomeIcon icon={faLink} />
-                        </Link>
-                        <h4>Uptown &amp; Boogie Bicycle</h4>
-                        <p>Website / Branding</p>
-                      </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <div className="portfolio_item h-100">
-                    <img src={require('../../assets/project-williebgarden.jpg')} className="img-fluid w-100" alt={"williebgarden"} />
-                      <div className="portfolio_info text-center p-2">
-                        <Link className="viewproject" to={`/project/williebgarden`}>
-                          <FontAwesomeIcon icon={faLink} />
-                        </Link>
-                        <h4>William B. Washington Garden</h4>
-                        <p>Branding</p>
-                      </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <div className="portfolio_item h-100">
-                    <img src={require('../../assets/project-vaccaroandwhite.jpg')} className="img-fluid" alt={"fpo"} />
-                      <div className="portfolio_info text-center p-2">
-                        <Link className="viewproject" to={`/project/vaccaroandwhite`}>
-                          <FontAwesomeIcon icon={faLink} />
-                        </Link>
-                        <h4>Law Office of Vaccaro &amp; White</h4>
-                        <p>Website</p>
-                      </div>
-                  </div>
-                </div>
-  */}
               </div>
             </div>
           </div>
