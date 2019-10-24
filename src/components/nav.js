@@ -1,6 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import {
+  Link,
+  useRouteMatch
+} from "react-router-dom";
 import logo from '../assets/rtc-logo.gif';
+import Menu from '../json/nav_menu.json';
+
+function RenderNav(data){
+  console.log('menu',data, window.location.pathname);
+  return data.nav.page.map((menu,m) => {
+    return (
+      <MenuLink to={menu.path} label={menu.label} num={m} />
+    )
+  })
+}
+function MenuLink({label, to, num}) {
+  let match = useRouteMatch({
+    path: to,
+    exact: true
+  });
+
+  return (
+    <li key={num} className={match ? "nav-item active" : "nav-item"}>
+      <Link className="nav-link" to={to}>{label}</Link>
+    </li>
+  );
+}
 
 class NavBar extends Component {
 
@@ -16,21 +41,7 @@ class NavBar extends Component {
 
         <div className="collapse navbar-collapse justify-content-end" id="rtc-navbarToggler">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">Portfolio</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/resume">Resume</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
+            <RenderNav nav={Menu} />
           </ul>
         </div>
     </nav>

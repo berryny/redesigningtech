@@ -1,5 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, HashRouter, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  useLocation
+} from "react-router-dom";
 
 import './App.css';
 
@@ -56,6 +62,9 @@ function App() {
             }}>
 
           </Route>
+          <Route path="*">
+            <NoMatch />
+          </Route>
 
         </Switch>
       </main>
@@ -68,3 +77,22 @@ function App() {
 }
 
 export default App;
+
+function NoMatch() {
+  let location = useLocation();
+
+  return (
+    <div id="portfolio">
+      <section className="jumbotron text-center text-white bg-dark">
+        <div className="container">
+          <h1 className="jumbotron-heading">404 Error</h1>
+        </div>
+      </section>
+      <div className="container my-4">
+        <h3>
+          No match for <code>{location.pathname}</code>
+        </h3>
+      </div>
+    </div>
+  );
+}
