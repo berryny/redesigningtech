@@ -5,7 +5,7 @@ import RenderImage from '../../components/templates/imgRender';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fontawesome from '@fortawesome/fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faTumblr } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 // import {Carousel} from 'react-bootstrap/Carousel';
@@ -20,6 +20,8 @@ function SocialMediaFA(fa) {
     f = <FontAwesomeIcon icon={faTwitter} size="lg" />
   } else if (fa.icon == "faInstagram") {
     f = <FontAwesomeIcon icon={faInstagram} size="lg" />
+  }  else if (fa.icon == "faTumblr") {
+    f = <FontAwesomeIcon icon={faTumblr} size="lg" />
   } else {
     f = <FontAwesomeIcon icon={faLink} size="lg" />
   }
