@@ -27,7 +27,7 @@ function App() {
       <header className="">
         <NavBar />
       </header>
-      <main id="main" role="main" className="flex-shrink-0">
+      <main id="main" role="main" className="flex-shrink-0 mb-5">
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>

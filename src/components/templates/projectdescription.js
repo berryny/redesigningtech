@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import PortfolioProjects from '../../components/templates/portfolioprojects';
+import RenderImage from '../../components/templates/imgRender';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fontawesome from '@fortawesome/fontawesome';
@@ -40,6 +41,7 @@ function ClientProject(){
     data = this.state.client_data,
     portfolioList = this.state.client_data.portfolio;
     let obj = portfolioList.find(list => list.projectlink === clientName);
+    console.log('obj',obj);
     if (obj) {
       return (
         <div id="project">
@@ -53,7 +55,7 @@ function ClientProject(){
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <h4>ControlledCarousel</h4>
+                <RenderImage img={obj.thumbnail.img}  alt={obj.thumbnail.alt}/>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <h4>Project Description</h4>

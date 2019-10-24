@@ -3,12 +3,7 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
-const RenderImage = (info) => {
-  let imagepath = info.img
-  return (
-    <img src={require('../../'+imagepath)} className="img-fluid w-100" alt={info.alt} />
-  )
-}
+import RenderImage from '../../components/templates/imgRender';
 
 class PortfolioProjects extends Component {
   constructor(props){

@@ -9,7 +9,7 @@ import Menu from '../json/nav_menu.json';
 function RenderNav(data){
   return data.nav.page.map((menu,m) => {
     return (
-      <MenuLink to={menu.path} label={menu.label} num={m} />
+      <MenuLink key={m} to={menu.path} label={menu.label} num={m} />
     )
   })
 }
