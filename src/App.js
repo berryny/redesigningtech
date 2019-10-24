@@ -18,6 +18,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 
 import Project from './components/templates/projectdescription';
+import PortfolioData from './json/site_portfolio.json';
 
 function App() {
   return (
@@ -31,11 +32,11 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact={true} path="/">
-            <Home />
+            <Home data={PortfolioData} />
           </Route>
 
           <Route exact={true} path="/redesigningtech">
-            <Home />
+            <Home data={PortfolioData} />
           </Route>
 
           <Route exact={true} path="/about">
@@ -43,21 +44,21 @@ function App() {
           </Route>
 
           <Route exact={true} path="/portfolio">
-            <Portfolio />
+            <Portfolio data={PortfolioData} />
           </Route>
 
           <Route exact={true} path="/resume">
             <Resume />
           </Route>
 
-          <Route exact path="/contact">
+          <Route exact={true} path="/contact">
             <Contact />
           </Route>
 
-          <Route exact path="/project/:id" render={(props) => {
-              let projectPostion = props.location.pathname.replace('/project/', '');
+          <Route exact={true} path="/portfolio/:id" render={(props) => {
+              let projectName = props.location.pathname.replace('/portfolio/', '');
               return (
-                <Project client={projectPostion} />
+                <Project client={projectName} data={PortfolioData} />
               );
             }}>
 

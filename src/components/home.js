@@ -9,7 +9,6 @@ import $ from 'jquery';
 import profile_img from '../assets/img-Judi.jpg';
 import SocialMedia from '../components/socialmedia';
 import PortfolioProjects from '../components/templates/portfolioprojects';
-import Data from '../json/site_portfolio.json';
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
@@ -30,6 +29,9 @@ $('.carousel').carousel()
 
 });
 class Home extends Component {
+  constructor(props){
+    super(props)
+  }
 
   render() {
     return (
@@ -38,7 +40,7 @@ class Home extends Component {
           <div className="cover-jumbotron h-100">
             <div className="container">
               <div className="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-                <h1>lets work on something interesting today</h1>
+                <h1>lets work on something together</h1>
                 <p className="lead my-3">Web Developer based in New York City</p>
                 <p><Link className="btn btn-default btn-outline-light" to="/resume" role="button">Know More <FontAwesomeIcon icon={faAngleDoubleRight} /></Link></p>
               </div>
@@ -102,8 +104,9 @@ class Home extends Component {
             </div>
           </section>
         </div>
-        {/*You need to use require if using webpack*/}
-        <PortfolioProjects feed={Data} />
+
+        {/*Pass in portfolio json*/}
+        <PortfolioProjects feed={this.props.data} />
 
       </div>
     )

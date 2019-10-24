@@ -12,12 +12,57 @@
       "projectlink": "boogieblvd",
       "projectdescription":{
         "partners":"BronxWorks",
-        "skills": "HTML5, CSS3, JS/jQuery, Wordpress",
+        "skills": "HTML, CSS, JavaScript/jQuery, Wordpress, PHP",
         "description": [
-          "Responsible for hand-coding AMEX Travel standard and platinum native mobile, tablet and desktop web design with browser responsiveness fluid layout using HTML/HTML5, CSS2/CSS3 and JS/jQuery.",
+          "Responsible for hand-coding AMEX Travel standard and platinum native mobile, tablet and desktop web design with browser responsiveness fluid layout using HTML, CSS2/CSS and JS/jQuery.",
           "Active Transportation Block Captain"
         ],
         "site": "https://www.boogieontheboulevard.org/",
+        "socialmedia": [
+          {
+            "icon": "faFacebook",
+            "link": "https://facebook.com"
+          },
+          {
+            "icon": "faTwitter",
+            "link": "https://twitter.com"
+          },
+          {
+            "icon": "faInstagram",
+            "link": "https://instagram.com"
+          }
+        ]
+      },
+      "images":[
+          {
+            "alt":"#BOOGIEBLVD - Desktop",
+            "img":"../assets/fpo-one-thumb.jpg"
+          },
+          {
+            "alt":"#BOOGIEBLVD - Mobile",
+            "img":"../assets/fpo-one-thumb.jpg"
+          }
+      ]
+    },
+    {
+      "name":"Uptown and Boogie Bicycle Advocacy",
+      "type": "Website / Branding",
+      "roles":"Director of Community Outreach and Event Management",
+      "thumbnail":{
+        "alt":"Uptown and Boogie Bicycle Advocacy",
+        "img":"assets/project-ubbicycleadv.jpg"
+      },
+      "projectlink": "ubbicycleadv",
+      "projectdescription":{
+        "partners":"Consultant",
+        "skills": "HTML, CSS, JavaScript/jQuery, Angular",
+        "description": [
+          "Providing Front-End/Web Development for desktop browsers and mobile/tablet (portable) devices.",
+          "Establish and direct long term strategic goals, policies, and procedures for SEO content and web marketing techniques",
+          "Responsible for interaction, create, schedule, organize, and promote outreach activities within the community and promoting company services through marketing events, such as workshops and outdoor activities in the Manhattan and Bronx neighborhoods",
+          "Work with non-profit organization to provide cutting-edge marketing techniques to build loyalty and support within their service areas"
+        ],
+        "site": "https://www.ubbicycle.org/",
         "socialmedia": [
           {
             "icon": "faFacebook",
@@ -49,16 +94,15 @@
       "type": "Website",
       "roles":"Code Insturctor",
       "thumbnail":{
-        "alt":"Boogle on the Boulevard",
-        "img":"../assets/project-boogieblvd.jpg"
+        "alt":"St Nicholas Houses",
+        "img":"assets/project-stnicholashouses.jpg"
       },
       "projectlink": "stnicholashouses",
       "projectdescription":{
-        "partners":"BronxWorks",
-        "skills": "HTML5, CSS3, JS/jQuery, Wordpress, php",
+        "partners":"Silicon Harlem",
+        "skills": "HTML, CSS, JavaScript/jQuery, Wordpress, PHP",
         "description": [
-          "Responsible for hand-coding AMEX Travel standard and platinum native mobile, tablet and desktop web design with browser responsiveness fluid layout using HTML/HTML5, CSS2/CSS3 and JS/jQuery.",
-          "Active Transportation Block Captain"
+          "Providing non-technical youth between 16-24 with the skills on how to build prototypes using Adobe XD, fully functional website from end-to-end using HTML/CSS/Wordpress and speaking the lingo. The program is a 6-week course curriculum which teaches youth the skills towards the development of building a community-oriented website for St Nicholas Houses (NYCHA)."
         ],
         "site": "https://www.stnicholashouses.org/",
         "socialmedia": [
@@ -83,6 +127,46 @@
           },
           {
             "alt":"stnicholashouses - Mobile",
+            "img":"../assets/fpo-one-thumb.jpg"
+          }
+      ]
+    },
+    {
+      "name":"William B Washington Gardens",
+      "type": "Website",
+      "roles":"Project Coordinator",
+      "thumbnail":{
+        "alt":"William B Washington Gardens",
+        "img":"assets/project-thewilliebmemorialgarden.jpg"
+      },
+      "projectlink": "thewilliebmemorialgarden",
+      "projectdescription":{
+        "partners":"NYC Parks - GreenThumb",
+        "skills": "HTML, CSS, Tumblr, Facebook",
+        "description": [
+          "Obtained the 2018 Community-Scale Composting Grant from Citizens Committee for New York City funds to build 3-bin compost system, keeper workshop and coordinate organics collection program with the Department of Sanitation.",
+          "Compost Manager, educate community members on the process and benefits of indoor/outdoor composting",
+          "Gardener, manage soil cultivation, digging, watering beds and planting."
+        ],
+        "site": "https://gardencompostproject.tumblr.com/",
+        "socialmedia": [
+          {
+            "icon": "faFacebook",
+            "link": "https://www.facebook.com/thewilliebmemorialgarden/"
+          },
+          {
+            "icon": "faInstagram",
+            "link": "https://twitter.com"
+          }
+        ]
+      },
+      "images":[
+          {
+            "alt":"thewilliebmemorialgarden - Desktop",
+            "img":"../assets/fpo-one-thumb.jpg"
+          },
+          {
+            "alt":"thewilliebmemorialgarden - Mobile",
             "img":"../assets/fpo-one-thumb.jpg"
           }
       ]

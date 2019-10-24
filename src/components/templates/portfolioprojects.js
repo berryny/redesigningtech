@@ -3,9 +3,15 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
+const RenderImage = (info) => {
+  let imagepath = info.img
+  return (
+    <img src={require('../../'+imagepath)} className="img-fluid w-100" alt={info.alt} />
+  )
+}
+
 class PortfolioProjects extends Component {
   constructor(props){
-    console.log("this.props.",props);
     super(props)
     this.state = {
       portfolio_feed: this.props.feed,
@@ -13,18 +19,14 @@ class PortfolioProjects extends Component {
     }
     this.renderPortfolio = this.renderPortfolio.bind(this);
   }
-  // Import all images in image folder
-  //<img src={require('../../assets/project-boogieblvd.jpg')} className="img-fluid w-100" alt={"boogieblvd"} />
 
   renderPortfolio() {
-    console.log('this.state.portfolio_projects',this.state.portfolio_projects);
-    console.log("process.env.",process.env);
     return this.state.portfolio_projects.map((pdata, i) => (
       <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-4" key={i}>
         <div className="portfolio_item h-100">
-          <img src={process.env.PUBLIC_URL + '../../'+pdata.thumbnail.img} className="img-fluid w-100" alt={pdata.thumbnail.alt} />
+          <RenderImage img={pdata.thumbnail.img}  alt={pdata.thumbnail.alt}/>
           <div className="portfolio_info text-center p-2">
-            <Link className="viewproject" to={`/project/`+pdata.projectlink}>
+            <Link className="viewproject" to={`/portfolio/`+pdata.projectlink}>
               <FontAwesomeIcon icon={faLink} />
             </Link>
             <h4>{pdata.name}</h4>
@@ -36,6 +38,7 @@ class PortfolioProjects extends Component {
   }
 
   render() {
+
     return (
       <div className="container-fluid bg-light pt-5 pb-5 mt-5 mb-5">
         <section id="portfolio_work">

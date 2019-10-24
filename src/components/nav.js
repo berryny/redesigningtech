@@ -7,7 +7,6 @@ import logo from '../assets/rtc-logo.gif';
 import Menu from '../json/nav_menu.json';
 
 function RenderNav(data){
-  console.log('menu',data, window.location.pathname);
   return data.nav.page.map((menu,m) => {
     return (
       <MenuLink to={menu.path} label={menu.label} num={m} />
