@@ -1,20 +1,35 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import fontawesome from '@fortawesome/fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-
-import {Carousel} from 'react-bootstrap/Carousel';
-import ControlledCarousel from './controlledCarousel';
 
 import PortfolioProjects from '../../components/templates/portfolioprojects';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import fontawesome from '@fortawesome/fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+
+// import {Carousel} from 'react-bootstrap/Carousel';
+// import ControlledCarousel from './controlledCarousel';
+
+function SocialMediaFA(fa) {
+  let f = '';
+  if (fa.icon == "faFacebook") {
+    console.log('faFacebook');
+    f = <FontAwesomeIcon icon={faFacebook} size="lg" />
+  } else if (fa.icon == "faTwitter") {
+    f = <FontAwesomeIcon icon={faTwitter} size="lg" />
+  } else if (fa.icon == "faInstagram") {
+    f = <FontAwesomeIcon icon={faInstagram} size="lg" />
+  } else {
+    f = <FontAwesomeIcon icon={faLink} size="lg" />
+  }
+  return f
+}
+
 function ProjectSocialMedia(sm_links) {
-  console.log('sm', this, sm_links.sm);
   return sm_links.sm.map((socialmedia, i) => {
     return (
       <li key={i} className="list-inline-item"><a rel="noopener noreferrer" href={socialmedia.link} target="_blank">
-        <FontAwesomeIcon icon={socialmedia.icon} size="lg" /></a>
+        <SocialMediaFA icon={socialmedia.icon} /></a>
       </li>
     )
   })
@@ -25,7 +40,6 @@ function ClientProject(){
     data = this.state.client_data,
     portfolioList = this.state.client_data.portfolio;
     let obj = portfolioList.find(list => list.projectlink === clientName);
-    console.log('obj',obj);
     if (obj) {
       return (
         <div id="project">
