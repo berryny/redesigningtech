@@ -1,26 +1,35 @@
 {
   "files": {
     "main.css": "/redesigningtech/static/css/main.73698c30.chunk.css",
-    "main.js": "/redesigningtech/static/js/main.7f702d84.chunk.js",
-    "main.js.map": "/redesigningtech/static/js/main.7f702d84.chunk.js.map",
+    "main.js": "/redesigningtech/static/js/main.70b8fdb3.chunk.js",
+    "main.js.map": "/redesigningtech/static/js/main.70b8fdb3.chunk.js.map",
     "runtime-main.js": "/redesigningtech/static/js/runtime-main.c58c2a1c.js",
     "runtime-main.js.map": "/redesigningtech/static/js/runtime-main.c58c2a1c.js.map",
     "static/css/2.0624914a.chunk.css": "/redesigningtech/static/css/2.0624914a.chunk.css",
-    "static/js/2.1b221bee.chunk.js": "/redesigningtech/static/js/2.1b221bee.chunk.js",
-    "static/js/2.1b221bee.chunk.js.map": "/redesigningtech/static/js/2.1b221bee.chunk.js.map",
+    "static/js/2.bc1897a1.chunk.js": "/redesigningtech/static/js/2.bc1897a1.chunk.js",
+    "static/js/2.bc1897a1.chunk.js.map": "/redesigningtech/static/js/2.bc1897a1.chunk.js.map",
     "index.html": "/redesigningtech/index.html",
-    "precache-manifest.8ad8367f8621265276f9c083194e817d.js": "/redesigningtech/precache-manifest.8ad8367f8621265276f9c083194e817d.js",
+    "precache-manifest.7e2d83c429324ae738288ca7fb6484dc.js": "/redesigningtech/precache-manifest.7e2d83c429324ae738288ca7fb6484dc.js",
     "service-worker.js": "/redesigningtech/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/redesigningtech/static/css/2.0624914a.chunk.css.map",
     "static/css/main.73698c30.chunk.css.map": "/redesigningtech/static/css/main.73698c30.chunk.css.map",
+    "static/media/Judith_Desire_Resume.pdf": "/redesigningtech/static/media/Judith_Desire_Resume.a082d419.pdf",
+    "static/media/fpo-one-thumb.jpg": "/redesigningtech/static/media/fpo-one-thumb.30cb95c2.jpg",
     "static/media/img-Judi.jpg": "/redesigningtech/static/media/img-Judi.df59ea78.jpg",
-    "static/media/App.css": "/redesigningtech/static/media/jd-helpinghands-1.2bd179dd.jpg"
+    "static/media/jd-coder.jpg": "/redesigningtech/static/media/jd-coder.cde71cde.jpg",
+    "static/media/jd-helpinghands-1.jpg": "/redesigningtech/static/media/jd-helpinghands-1.2bd179dd.jpg",
+    "static/media/logo.svg": "/redesigningtech/static/media/logo.25bf045c.svg",
+    "static/media/project-boogieblvd.jpg": "/redesigningtech/static/media/project-boogieblvd.982ec309.jpg",
+    "static/media/project-stnicholashouses.jpg": "/redesigningtech/static/media/project-stnicholashouses.db85ec64.jpg",
+    "static/media/project-thewilliebmemorialgarden.jpg": "/redesigningtech/static/media/project-thewilliebmemorialgarden.ce4bba57.jpg",
+    "static/media/project-ubbicycleadv.jpg": "/redesigningtech/static/media/project-ubbicycleadv.c2c41918.jpg",
+    "static/media/project-vaccaroandwhite.jpg": "/redesigningtech/static/media/project-vaccaroandwhite.bbc3fd35.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c58c2a1c.js",
     "static/css/2.0624914a.chunk.css",
-    "static/js/2.1b221bee.chunk.js",
+    "static/js/2.bc1897a1.chunk.js",
     "static/css/main.73698c30.chunk.css",
-    "static/js/main.7f702d84.chunk.js"
+    "static/js/main.70b8fdb3.chunk.js"
   ]
 }
