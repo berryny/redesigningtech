@@ -5,9 +5,8 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 import {Carousel} from 'react-bootstrap/Carousel';
-
-import Data from '../../json/site_portfolio.json';
 import ControlledCarousel from './controlledCarousel';
+
 import PortfolioProjects from '../../components/templates/portfolioprojects';
 
 function ProjectSocialMedia(sm_links) {
@@ -78,11 +77,11 @@ function ClientProject(){
 
 class Project extends Component {
   constructor(props){
-    // console.log("this.props Project",props);
+    console.log("this.props Project",props);
     super(props)
     this.state = {
       client_projects: this.props.client,
-      client_data: Data
+      client_data: this.props.data
     }
     ClientProject = ClientProject.bind(this);
     ProjectSocialMedia = ProjectSocialMedia.bind(this);
