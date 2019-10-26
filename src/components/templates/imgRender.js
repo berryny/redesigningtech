@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class RenderImage extends Component {
   constructor(props){
-    console.log("this.props RenderImage",props);
+    // console.log("this.props RenderImage",props);
     super(props)
   }
 

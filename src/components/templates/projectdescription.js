@@ -13,14 +13,13 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 function SocialMediaFA(fa) {
   let f = '';
-  if (fa.icon == "faFacebook") {
-    console.log('faFacebook');
+  if (fa.icon === "faFacebook") {
     f = <FontAwesomeIcon icon={faFacebook} size="lg" />
-  } else if (fa.icon == "faTwitter") {
+  } else if (fa.icon === "faTwitter") {
     f = <FontAwesomeIcon icon={faTwitter} size="lg" />
-  } else if (fa.icon == "faInstagram") {
+  } else if (fa.icon === "faInstagram") {
     f = <FontAwesomeIcon icon={faInstagram} size="lg" />
-  }  else if (fa.icon == "faTumblr") {
+  }  else if (fa.icon === "faTumblr") {
     f = <FontAwesomeIcon icon={faTumblr} size="lg" />
   } else {
     f = <FontAwesomeIcon icon={faLink} size="lg" />
@@ -38,12 +37,12 @@ function ProjectSocialMedia(sm_links) {
   })
 }
 
-function ClientProject(){
-  let clientName = this.state.client_projects,
-    data = this.state.client_data,
-    portfolioList = this.state.client_data.portfolio;
-    let obj = portfolioList.find(list => list.projectlink === clientName);
-    console.log('obj',obj);
+function ClientProject(dataObj){
+  let clientName = dataObj.projects.client_projects,
+    data = this.props.data,
+    portfolioList = dataObj.projects.client_data.portfolio;
+    const obj = portfolioList.find(list => list.projectlink === clientName);
+
     if (obj) {
       return (
         <div id="project">
@@ -95,7 +94,6 @@ function ClientProject(){
 
 class Project extends Component {
   constructor(props){
-    console.log("this.props Project",props);
     super(props)
     this.state = {
       client_projects: this.props.client,
@@ -104,14 +102,20 @@ class Project extends Component {
     ClientProject = ClientProject.bind(this);
     ProjectSocialMedia = ProjectSocialMedia.bind(this);
   }
+
+
+
   render() {
+    const projectState = this.state
+
     return (
       <div>
-        <ClientProject />
+        <ClientProject projects={projectState} />
       </div>
     )
   }
 }
+
 console.log("project details");
 
 export default Project;
