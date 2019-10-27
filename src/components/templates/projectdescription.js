@@ -39,6 +39,14 @@ function ProjectSocialMedia(sm_links) {
   })
 }
 
+function ProjectDescription(details) {
+  return details.list.map((listing, l) => {
+    return (
+      <li key={l}>{listing}</li>
+    )
+  })
+}
+
 class Project extends Component {
   constructor(props){
     super(props)
@@ -61,6 +69,7 @@ class Project extends Component {
       const obj = portfolioList.find(list => list.projectlink === clientName);
 
     if (obj) {
+      console.log('obj',obj);
       return (
         <div id="project">
           <section className="jumbotron text-center text-white bg-dark">
@@ -79,6 +88,8 @@ class Project extends Component {
                 <h4>Project Description</h4>
                 <p><strong>Partners:</strong> {obj.projectdescription.partners}</p>
                 <p><strong>Skills:</strong> {obj.projectdescription.skills}</p>
+                <p><strong>Description:</strong></p>
+                <ul><ProjectDescription list={obj.projectdescription.description} /></ul>
                 <p>
                   <strong>Site: </strong>
                   <a rel="noopener noreferrer" href="{obj.projectdescription.site}" target="_blank">{obj.name}</a>
