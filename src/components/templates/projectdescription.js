@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import PortfolioProjects from '../../components/templates/portfolioprojects';
 import RenderImage from '../../components/templates/imgRender';
@@ -14,6 +15,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 function SocialMediaFA(fa) {
   let f = '';
   if (fa.icon === "faFacebook") {
+    console.log('faFacebook');
     f = <FontAwesomeIcon icon={faFacebook} size="lg" />
   } else if (fa.icon === "faTwitter") {
     f = <FontAwesomeIcon icon={faTwitter} size="lg" />
@@ -37,11 +39,26 @@ function ProjectSocialMedia(sm_links) {
   })
 }
 
-function ClientProject(dataObj){
-  let clientName = dataObj.projects.client_projects,
-    data = this.props.data,
-    portfolioList = dataObj.projects.client_data.portfolio;
-    const obj = portfolioList.find(list => list.projectlink === clientName);
+class Project extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      client_projects: this.props.client,
+      client_data: this.props.data
+    }
+    ProjectSocialMedia = ProjectSocialMedia.bind(this);
+  }
+
+  renderClientProject() {
+    //update state values
+    this.state = {
+      client_projects: this.props.client,
+      client_data: this.props.data
+    }
+    let clientName = this.state.client_projects,
+      data = this.props.data,
+      portfolioList = this.state.client_data.portfolio;
+      const obj = portfolioList.find(list => list.projectlink === clientName);
 
     if (obj) {
       return (
@@ -55,7 +72,7 @@ function ClientProject(dataObj){
           </section>
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 mb-5">
                 <RenderImage img={obj.thumbnail.img}  alt={obj.thumbnail.alt}/>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -89,33 +106,16 @@ function ClientProject(dataObj){
         </div>
       )
     }
-}
-
-
-class Project extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      client_projects: this.props.client,
-      client_data: this.props.data
-    }
-    ClientProject = ClientProject.bind(this);
-    ProjectSocialMedia = ProjectSocialMedia.bind(this);
   }
 
-
-
   render() {
-    const projectState = this.state
-
     return (
       <div>
-        <ClientProject projects={projectState} />
+        {this.renderClientProject()}
       </div>
     )
   }
 }
-
 console.log("project details");
 
 export default Project;
