@@ -1,19 +1,19 @@
 {
   "page": [
     {
-      "path": "/about",
+      "path": "/redesigningtech/about",
       "label": "About"
     },
     {
-      "path": "/portfolio",
+      "path": "/redesigningtech/portfolio",
       "label": "Portfolio"
     },
     {
-      "path": "/resume",
+      "path": "/redesigningtech/resume",
       "label": "Resume"
     },
     {
-      "path": "/contact",
+      "path": "/redesigningtech/contact",
       "label": "Contact"
     }
   ]

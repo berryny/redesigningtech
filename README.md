@@ -1,10 +1,8 @@
 # React Project for Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Sites
-- [redesigningtech.com](https://redesigningtech.com)
-- [berryny.github.io/redesigningtech/](https://berryny.github.io/redesigningtech/)
+- [Portfolio - Angular JS](https://redesigningtech.com)
+- [Portfolio - React](https://berryny.github.io/redesigningtech/)
 
 ### Be sure to install or update
 - [node.js](https://nodejs.org/en/download/current/)
@@ -17,6 +15,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - A small window with a white background open on your desktop
 
 ## React Installation for Mac
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 An error occurred when using `npm install -g react-devtools` the work around trick is:
 ```
@@ -198,6 +198,7 @@ git push -u origin master
 - [React Datepicker](https://reactdatepicker.com/)
   - [React Date Picker](https://www.npmjs.com/package/react-datepicker)
 - [You Might Not Need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
+- [React lifecycle](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 ## Basic Router Setup
 
@@ -319,10 +320,10 @@ function Footer() {
 export default Footer;
 ```
 
+# React Generated README.md content
+
 ### How to create a README file for github
 [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#lists)
-
-# React Generated README.md content
 
 ## Available Scripts
 

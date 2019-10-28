@@ -39,26 +39,26 @@ function App() {
             <Home data={PortfolioData} />
           </Route>
 
-          <Route exact={true} path="/about">
+          <Route exact={true} path="/redesigningtech/about">
             <About state="active"/>
           </Route>
 
-          <Route exact={true} path="/portfolio">
+          <Route exact={true} path="/redesigningtech/portfolio">
             <Portfolio data={PortfolioData} />
           </Route>
 
-          <Route exact={true} path="/resume">
+          <Route exact={true} path="/redesigningtech/resume">
             <Resume />
           </Route>
 
-          <Route exact={true} path="/contact">
+          <Route exact={true} path="/redesigningtech/contact">
             <Contact />
           </Route>
 
           <Route exact={true}
-            path="/portfolio/:id"
+            path="/redesigningtech/portfolio/:id"
             render={(props) => {
-              let projectName = props.location.pathname.replace('/portfolio/', '');
+              let projectName = props.location.pathname.replace('/redesigningtech/portfolio/', '');
               return (
                 <Project match={props.match} client={projectName} data={PortfolioData} />
               );

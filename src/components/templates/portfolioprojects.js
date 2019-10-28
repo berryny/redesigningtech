@@ -21,7 +21,7 @@ class PortfolioProjects extends Component {
         <div className="portfolio_item h-100">
           <RenderImage img={pdata.thumbnail.img}  alt={pdata.thumbnail.alt}/>
           <div className="portfolio_info text-center p-2">
-            <Link className="viewproject" to={`/portfolio/`+pdata.projectlink}>
+            <Link className="viewproject" to={`/redesigningtech/portfolio/`+pdata.projectlink}>
               <FontAwesomeIcon icon={faLink} />
             </Link>
             <h4>{pdata.name}</h4>
