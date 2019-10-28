@@ -69,7 +69,6 @@ class Project extends Component {
       const obj = portfolioList.find(list => list.projectlink === clientName);
 
     if (obj) {
-      console.log('obj',obj);
       return (
         <div id="project">
           <section className="jumbotron text-center text-white bg-dark">

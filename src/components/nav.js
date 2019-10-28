@@ -16,11 +16,10 @@ function RenderNav(data){
 function MenuLink({label, to, num}) {
   let match = useRouteMatch({
     path: to,
-    exact: true
+    // exact: true
   });
-
   return (
-    <li key={num} className={match ? "nav-item active" : "nav-item"}>
+    <li key={num} className={match ? "nav-item active "+ label.toLowerCase() : "nav-item "+ label.toLowerCase() }>
       <Link className="nav-link" to={to}>{label}</Link>
     </li>
   );

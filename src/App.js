@@ -24,7 +24,7 @@ function App() {
   return (
     // <HashRouter basename="/">
     <Router>
-      <header className="">
+      <header className="site-header">
         <NavBar />
       </header>
       <main id="main" role="main" className="flex-shrink-0 mb-5">
@@ -55,10 +55,12 @@ function App() {
             <Contact />
           </Route>
 
-          <Route exact={true} path="/portfolio/:id" render={(props) => {
+          <Route exact={true}
+            path="/portfolio/:id"
+            render={(props) => {
               let projectName = props.location.pathname.replace('/portfolio/', '');
               return (
-                <Project client={projectName} data={PortfolioData} />
+                <Project match={props.match} client={projectName} data={PortfolioData} />
               );
             }}>
 
