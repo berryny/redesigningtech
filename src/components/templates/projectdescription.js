@@ -6,7 +6,7 @@ import RenderImage from '../../components/templates/imgRender';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import fontawesome from '@fortawesome/fontawesome';
-import { faFacebook, faTwitter, faInstagram, faTumblr } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faTumblr, faFlickr } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 // import {Carousel} from 'react-bootstrap/Carousel';
@@ -15,7 +15,6 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 function SocialMediaFA(fa) {
   let f = '';
   if (fa.icon === "faFacebook") {
-    console.log('faFacebook');
     f = <FontAwesomeIcon icon={faFacebook} size="lg" />
   } else if (fa.icon === "faTwitter") {
     f = <FontAwesomeIcon icon={faTwitter} size="lg" />
@@ -23,6 +22,8 @@ function SocialMediaFA(fa) {
     f = <FontAwesomeIcon icon={faInstagram} size="lg" />
   }  else if (fa.icon === "faTumblr") {
     f = <FontAwesomeIcon icon={faTumblr} size="lg" />
+  } else if (fa.icon === "faFlickr") {
+    f = <FontAwesomeIcon icon={faFlickr} size="lg" />
   } else {
     f = <FontAwesomeIcon icon={faLink} size="lg" />
   }
@@ -80,10 +81,10 @@ class Project extends Component {
           </section>
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 mb-5">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5">
                 <RenderImage img={obj.thumbnail.img}  alt={obj.thumbnail.alt}/>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h4>Project Description</h4>
                 <p><strong>Partners:</strong> {obj.projectdescription.partners}</p>
                 <p><strong>Skills:</strong> {obj.projectdescription.skills}</p>
@@ -93,6 +94,7 @@ class Project extends Component {
                   <strong>Site: </strong>
                   <a rel="noopener noreferrer" href="{obj.projectdescription.site}" target="_blank">{obj.name}</a>
                 </p>
+                <p><strong>Community Platforms:</strong></p>
                 <ul className="list-inline"><ProjectSocialMedia sm={obj.projectdescription.socialmedia} /></ul>
               </div>
             </div>

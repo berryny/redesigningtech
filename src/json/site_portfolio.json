@@ -7,7 +7,7 @@
       "roles":"Frontend Developer and Community Outreach",
       "thumbnail":{
         "alt":"Boogle on the Boulevard",
-        "img":"assets/project-boogieblvd.jpg"
+        "img":"assets/feature_boogieblvd.png"
       },
       "projectlink": "boogieblvd",
       "projectdescription":{
@@ -17,19 +17,19 @@
           "Responsible for hand-coding AMEX Travel standard and platinum native mobile, tablet and desktop web design with browser responsiveness fluid layout using HTML, CSS2/CSS and JS/jQuery.",
           "Active Transportation Block Captain"
         ],
-        "site": "https://www.boogieontheboulevard.org/",
+        "site": "https://www.boogieontheboulevard.org",
         "socialmedia": [
           {
             "icon": "faFacebook",
-            "link": "https://facebook.com"
+            "link": "https://www.facebook.com/boogieblvd"
           },
           {
             "icon": "faTwitter",
-            "link": "https://twitter.com"
+            "link": "https://twitter.com/boogieblvd"
           },
           {
             "icon": "faInstagram",
-            "link": "https://instagram.com"
+            "link": "https://www.instagram.com/boogieblvd"
           }
         ]
       },
@@ -50,7 +50,7 @@
       "roles":"Director of Community Outreach and Event Management",
       "thumbnail":{
         "alt":"Uptown and Boogie Bicycle Advocacy",
-        "img":"assets/project-ubbicycleadv.jpg"
+        "img":"assets/feature_ubbicycleadv.png"
       },
       "projectlink": "ubbicycleadv",
       "projectdescription":{
@@ -66,25 +66,25 @@
         "socialmedia": [
           {
             "icon": "faFacebook",
-            "link": "https://facebook.com"
+            "link": "https://www.facebook.com/ubbicycleadv"
           },
           {
-            "icon": "faTwitter",
-            "link": "https://twitter.com"
+            "icon": "faFlickr",
+            "link": "https://www.flickr.com/photos/geeketteworld/sets/72157688141775386"
           },
           {
             "icon": "faInstagram",
-            "link": "https://instagram.com"
+            "link": "https://www.instagram.com/uptownbronxbicycle"
           }
         ]
       },
       "images":[
           {
-            "alt":"#BOOGIEBLVD - Desktop",
+            "alt":"Uptown and Boogie Bicycle Advocacy - Desktop",
             "img":"../assets/fpo-one-thumb.jpg"
           },
           {
-            "alt":"#BOOGIEBLVD - Mobile",
+            "alt":"Uptown and Boogie Bicycle Advocacy - Mobile",
             "img":"../assets/fpo-one-thumb.jpg"
           }
       ]
@@ -95,7 +95,7 @@
       "roles":"Code Insturctor",
       "thumbnail":{
         "alt":"St Nicholas Houses",
-        "img":"assets/project-stnicholashouses.jpg"
+        "img":"assets/feature_stnicholashouses.png"
       },
       "projectlink": "stnicholashouses",
       "projectdescription":{
@@ -108,15 +108,15 @@
         "socialmedia": [
           {
             "icon": "faFacebook",
-            "link": "https://facebook.com"
+            "link": "https://www.facebook.com/stnickhouses"
           },
           {
             "icon": "faTwitter",
-            "link": "https://twitter.com"
+            "link": "https://twitter.com/stnickhouses"
           },
           {
             "icon": "faInstagram",
-            "link": "https://instagram.com"
+            "link": "https://www.instagram.com/stnicholashouses/"
           }
         ]
       },
@@ -137,7 +137,7 @@
       "roles":"Project Coordinator",
       "thumbnail":{
         "alt":"William B Washington Gardens",
-        "img":"assets/project-thewilliebmemorialgarden.jpg"
+        "img":"assets/feature_thewilliebmemorialgarden.png"
       },
       "projectlink": "thewilliebmemorialgarden",
       "projectdescription":{
