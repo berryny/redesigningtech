@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f870fb8a3b5b6eb9c15a645b2958261",
+    "revision": "60b8750b00be2e4933246f98f6215e3e",
     "url": "/redesigningtech/index.html"
   },
   {
-    "revision": "a3e894cf9af044aa30e0",
+    "revision": "d5bc0b66bc525ff3954a",
     "url": "/redesigningtech/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "b0501920735e9ae2a6cd",
+    "revision": "f6d730dd38b85ca8d4a0",
     "url": "/redesigningtech/static/css/main.73698c30.chunk.css"
   },
   {
-    "revision": "a3e894cf9af044aa30e0",
-    "url": "/redesigningtech/static/js/2.4eaa6009.chunk.js"
+    "revision": "d5bc0b66bc525ff3954a",
+    "url": "/redesigningtech/static/js/2.ca03908c.chunk.js"
   },
   {
-    "revision": "b0501920735e9ae2a6cd",
-    "url": "/redesigningtech/static/js/main.8d6b11ac.chunk.js"
+    "revision": "f6d730dd38b85ca8d4a0",
+    "url": "/redesigningtech/static/js/main.f587baac.chunk.js"
   },
   {
     "revision": "d43d7e1aefbd20938e27",
@@ -26,6 +26,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a082d419fd8753c201dada300ec438e1",
     "url": "/redesigningtech/static/media/Judith_Desire_Resume.a082d419.pdf"
+  },
+  {
+    "revision": "5f6755759fb29f93c0a93a4fa0137020",
+    "url": "/redesigningtech/static/media/feature_boogieblvd.5f675575.png"
+  },
+  {
+    "revision": "a97b34cd3b5dc1654bed1387ef02cdef",
+    "url": "/redesigningtech/static/media/feature_stnicholashouses.a97b34cd.png"
+  },
+  {
+    "revision": "3972ecf780d590c008cfd8fa2ee0bd14",
+    "url": "/redesigningtech/static/media/feature_thewilliebmemorialgarden.3972ecf7.png"
+  },
+  {
+    "revision": "66d6b26e86a36e42bceb6a36cdf79ba0",
+    "url": "/redesigningtech/static/media/feature_ubbicycleadv.66d6b26e.png"
   },
   {
     "revision": "30cb95c2f83ccf1ce27b0df10ad4c255",
