@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/redesigningtech/static/css/main.73698c30.chunk.css",
-    "main.js": "/redesigningtech/static/js/main.73c03d3e.chunk.js",
-    "main.js.map": "/redesigningtech/static/js/main.73c03d3e.chunk.js.map",
+    "main.js": "/redesigningtech/static/js/main.6ba5c392.chunk.js",
+    "main.js.map": "/redesigningtech/static/js/main.6ba5c392.chunk.js.map",
     "runtime-main.js": "/redesigningtech/static/js/runtime-main.c58c2a1c.js",
     "runtime-main.js.map": "/redesigningtech/static/js/runtime-main.c58c2a1c.js.map",
     "static/css/2.0624914a.chunk.css": "/redesigningtech/static/css/2.0624914a.chunk.css",
     "static/js/2.0ef0dca9.chunk.js": "/redesigningtech/static/js/2.0ef0dca9.chunk.js",
     "static/js/2.0ef0dca9.chunk.js.map": "/redesigningtech/static/js/2.0ef0dca9.chunk.js.map",
     "index.html": "/redesigningtech/index.html",
-    "precache-manifest.3d67c0bdb508ebb582ceabf398b4a087.js": "/redesigningtech/precache-manifest.3d67c0bdb508ebb582ceabf398b4a087.js",
+    "precache-manifest.9443cbc3a11c147e4b1853f71ceeac83.js": "/redesigningtech/precache-manifest.9443cbc3a11c147e4b1853f71ceeac83.js",
     "service-worker.js": "/redesigningtech/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/redesigningtech/static/css/2.0624914a.chunk.css.map",
     "static/css/main.73698c30.chunk.css.map": "/redesigningtech/static/css/main.73698c30.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.0ef0dca9.chunk.js",
     "static/css/main.73698c30.chunk.css",
-    "static/js/main.73c03d3e.chunk.js"
+    "static/js/main.6ba5c392.chunk.js"
   ]
 }
