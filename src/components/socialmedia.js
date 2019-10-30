@@ -19,7 +19,7 @@ render() {
           <a rel="noopener noreferrer" href="https://github.com/berryny/" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
         </li>
         <li className="list-inline-item">
-          <Link to="/resume"><FontAwesomeIcon icon={faFilePdf} /></Link>
+          <Link to="/redesigningtech/resume"><FontAwesomeIcon icon={faFilePdf} /></Link>
         </li>
         <li className="list-inline-item">
           <a rel="noopener noreferrer" href="mailto:info@redesigningtech.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} /></a>
