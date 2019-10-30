@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9f0fa410d03c7382fd66dd93f81e254",
+    "revision": "a656780d46f545bbb93d1597e84d7c43",
     "url": "/redesigningtech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/redesigningtech/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "cbe5dd8e7fd799d7e451",
+    "revision": "cbfbf76d8b3710aebcd7",
     "url": "/redesigningtech/static/css/main.73698c30.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/redesigningtech/static/js/2.0ef0dca9.chunk.js"
   },
   {
-    "revision": "cbe5dd8e7fd799d7e451",
-    "url": "/redesigningtech/static/js/main.6ba5c392.chunk.js"
+    "revision": "cbfbf76d8b3710aebcd7",
+    "url": "/redesigningtech/static/js/main.fb3e6025.chunk.js"
   },
   {
     "revision": "d43d7e1aefbd20938e27",
