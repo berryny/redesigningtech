@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="container text-center text-white">
-        <p>&copy; 2019 All rights reserved. / Author: <Link to="/about">Judith Desire</Link></p>
+        <p>&copy; 2019 All rights reserved. / Author: <Link to="/redesigningtech/about">Judith Desire</Link></p>
         <SocialMedia />
       </div>
     )
