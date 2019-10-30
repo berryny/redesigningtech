@@ -3,31 +3,11 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight, faCode, faChalkboardTeacher, faHandsHelping, faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
-import $ from 'jquery';
-
 // image import
 import profile_img from '../assets/img-Judi.jpg';
 import SocialMedia from '../components/socialmedia';
 import PortfolioProjects from '../components/templates/portfolioprojects';
 
-// A $( document ).ready() block.
-$( document ).ready(function() {
-  console.log( "document loaded" );
-  $(".section_scroll").click(function() {
-    // event.preventDefault();
-      $('html, body').animate({
-        //  scrollTop: $("#main").offset().top
-          scrollTop: $($(this).attr('href')).offset().top
-      }, 2000);
-  });
-});
-
-// or:
-$( window ).on( "load", function() {
-console.log( "window loaded" );
-$('.carousel').carousel()
-
-});
 class Home extends Component {
   constructor(props){
     super(props)
