@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+import 'jquery/dist/jquery.js'
+import 'popper.js/dist/umd/popper.js'
 
 import NavBar from './components/nav';
 import Home from './components/home';
@@ -22,7 +24,6 @@ import PortfolioData from './json/site_portfolio.json';
 
 function App() {
   return (
-    // <HashRouter basename="/">
     <Router>
       <header className="site-header">
         <NavBar />
@@ -75,7 +76,6 @@ function App() {
         <Footer />
       </footer>
   </Router>
-  // </HashRouter>
   );
 }
 

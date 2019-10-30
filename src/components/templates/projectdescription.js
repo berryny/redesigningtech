@@ -9,9 +9,6 @@ import fontawesome from '@fortawesome/fontawesome';
 import { faFacebook, faTwitter, faInstagram, faTumblr, faFlickr } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
-// import {Carousel} from 'react-bootstrap/Carousel';
-// import ControlledCarousel from './controlledCarousel';
-
 function SocialMediaFA(fa) {
   let f = '';
   if (fa.icon === "faFacebook") {
@@ -59,7 +56,6 @@ class Project extends Component {
   }
 
   renderClientProject() {
-    //update state values
     this.state = {
       client_projects: this.props.client,
       client_data: this.props.data
@@ -128,6 +124,5 @@ class Project extends Component {
     )
   }
 }
-console.log("project details");
 
 export default Project;

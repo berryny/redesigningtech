@@ -83,6 +83,20 @@ Include Font Awesome in your project using `npm`
   sudo npm i --save @fortawesome/free-brands-svg-icons
 ```
 
+### Additional installations
+```
+sudo npm install react-icons lodash jquery popper.js moment react-moment
+```
+
+### Additional installations details
+
+[Lodash](https://lodash.com/) is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.
+
+[Moment.js](https://momentjs.com/) allow you to manipulate date and time in JavaScript. Parse, validate, manipulate, and display dates and times in JavaScript.
+
+[React Icons.](https://www.npmjs.com/package/react-icons) Include popular icons in your React projects easly with react-icons , which utilizes ES6 imports that allows you to include only the icons that your project is using.
+
+
 ```
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

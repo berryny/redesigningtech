@@ -31,6 +31,5 @@ class About extends Component {
     );
   }
 }
-console.log('about');
 
 export default About;

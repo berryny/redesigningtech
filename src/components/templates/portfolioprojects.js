@@ -50,6 +50,5 @@ class PortfolioProjects extends Component {
     )
   }
 }
-console.log('PortfolioProjects');
 
 export default PortfolioProjects;

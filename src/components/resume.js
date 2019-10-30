@@ -81,6 +81,5 @@ class Resume extends Component {
   }
 }
 
-console.log('resume');
 
 export default Resume;

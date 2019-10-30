@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight, faCode, faChalkboardTeacher, faHandsHelping, faCameraRetro } from '@fortawesome/free-solid-svg-icons';
 
-// image import
 import profile_img from '../assets/img-Judi.jpg';
 import SocialMedia from '../components/socialmedia';
 import PortfolioProjects from '../components/templates/portfolioprojects';

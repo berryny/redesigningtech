@@ -18,6 +18,5 @@ class Portfolio extends Component {
     );
   }
 }
-console.log('portfolio');
 
 export default Portfolio;

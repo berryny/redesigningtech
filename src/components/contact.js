@@ -32,6 +32,5 @@ class Contact extends Component {
     );
   }
 }
-console.log('contact');
 
 export default Contact;
