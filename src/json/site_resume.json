@@ -2,6 +2,7 @@
  "name": "Hire me!",
  "lead": "If you are a recruiter or direct hire, please click the below links to learn more about and if the job description matches the position requirements. Thank you!",
  "download_link": "../assets/Judith_Desire_Resume.pdf",
+ "professional_summary": "Goal-oriented Web Developer with strong commitment to collaboration and solutions-oriented problem-solving. Proven experience developing consumer-focused web sites using HTML, CSS, JQuery, React and JavaScript. Experience building websites for desktop, portable device users, meeting highest standards for web design, user experience, best practices, usability and speed.",
  "resume": {
   	"section": "Resume",
   	"leadership_experience": {
@@ -9,13 +10,12 @@
       "section": "Leadership Experience",
       "jobroles": [
     		{
-    			"title":"Front End Web Developer",
+    			"title":"Web Developer / Project Program Manager",
     			"company": "Redesigning Technology Corp.",
     			"location": "New York, NY",
     			"date": "Present",
     			"description":[
-            "Providing Front-End/Web Development for desktop browsers and mobile/tablet (portable) devices.", "Establish and direct long term strategic goals, policies, and procedures for SEO content and web marketing techniques.","Take PSD or XD mockup and create pixel perfect fully compliant hand-code HTML Markup.", "Determine systems needs with software and hardware to meet client’s business objectives.","Develop consistent, compliant, cross-browser code websites utilizing best practices for UX and GUI capability",
-            "Work in fast-paced small - or large environments","Assist clients with site tracking and analysis."
+            "Providing Front-End/Web Development for desktop browsers and portable devices", "Establish and direct long term strategic goals, policies, and procedures for SEO content and web marketing techniques", "Develop consistent, compliant, cross-browser code websites utilizing best practices for UX and GUI capability - Work in fast-paced small - or large environments - Assist clients with site tracking and analysis", "Built and utilized reporting systems to keep customers and management in loop with latest information", "Gathered requirements, defined scopes, allocated resources and established schedules meeting or exceeding project demands", "Designed, implemented and monitored web pages and sites for continuous improvement", "Designed sites to be compatible with top browsers, including Firefox, Chrome and Safari", "Analyzed requirements and designed, developed and implemented software applications for multiple websites", "Created eye catching and functional digital design concepts across various platforms to strengthen company brand and identity", "Tested websites and performed troubleshooting prior to deployment", "Created site layout and converted mockups using HTML and CSS practices", "Established web hosting for site and uploaded site files to hosting account"
           ]
     		},
         {
